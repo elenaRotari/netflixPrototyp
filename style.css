@@ -75,13 +75,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  position: relative;
 }
 .kidsMov {
   width: calc(98% / 3);
   background-color: aliceblue;
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
+  position: relative;
 }
 .childMovies1 {
   background-image: url(./assets/kid1.jpg);
@@ -107,13 +107,13 @@ main {
   background-image: url(./assets/kid6.jpg);
   background-size: cover;
 }
-.childMovie div i {
+.kidsMov i {
   font-weight: 700;
   font-size: 8rem;
-  color: rgb(132, 33, 2);
-  text-shadow: 2px 2px 2px 2px black;
-  position: relative;
+  color: rgba(231, 14, 14, 0.6);
+  position: absolute;
   bottom: 0;
+  right: 5px;
 }
 .topMovies {
   display: flex;
