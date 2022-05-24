@@ -71,9 +71,55 @@ main {
   padding: 0 0.5rem;
   /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
 }
+.childMovie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+}
+.kidsMov {
+  width: calc(98% / 3);
+  background-color: aliceblue;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+}
+.childMovies1 {
+  background-image: url(./assets/kid1.jpg);
+  background-size: cover;
+}
+.childMovies2 {
+  background-image: url(./assets/kid2.jpg);
+  background-size: cover;
+}
+.childMovies3 {
+  background-image: url(./assets/kid3.jpg);
+  background-size: cover;
+}
+.childMovies4 {
+  background-image: url(./assets/kid4.jpg);
+  background-size: cover;
+}
+.childMovies5 {
+  background-image: url(./assets/kid5.jpg);
+  background-size: cover;
+}
+.childMovies6 {
+  background-image: url(./assets/kid6.jpg);
+  background-size: cover;
+}
+.childMovie div i {
+  font-weight: 700;
+  font-size: 8rem;
+  color: rgb(132, 33, 2);
+  text-shadow: 2px 2px 2px 2px black;
+  position: relative;
+  bottom: 0;
+}
 .topMovies {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin-top: 1rem;
   position: relative;
 }
 .topMovies a {
@@ -88,7 +134,7 @@ main {
 }
 /* secdtion 2 geteilt 6  */
 .movie {
-  width: calc(100% / 6);
+  width: calc(95% / 6);
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
 }
