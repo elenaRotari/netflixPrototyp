@@ -122,6 +122,7 @@ main {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+  justify-content: space-evenly;
 }
 .topMovies .movie {
   position: relative;
