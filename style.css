@@ -19,7 +19,7 @@ a {
   color: red;
   text-decoration: none;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
   padding-right: 2rem;
 }
 .firstNav {
@@ -57,7 +57,7 @@ main {
   color: whitesmoke;
   position: absolute;
   left: 55%;
-  font-size: 2rem;
+  font-size: calc(0.7rem + 1vw);
   padding: 1rem;
 }
 .topMovie .topMovieContent p {
@@ -74,11 +74,12 @@ main {
 }
 .childMovie {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
 }
 .kidsMov {
-  width: calc(98% / 3);
+  width: calc(90% / 3);
   background-color: aliceblue;
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
@@ -110,7 +111,7 @@ main {
 }
 .kidsMov i {
   font-weight: 700;
-  font-size: 8rem;
+  font-size: calc(1rem + 5vw);
   color: rgba(231, 14, 14, 0.7);
   position: absolute;
   bottom: 0;
@@ -120,7 +121,9 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 1rem;
+  padding: 1rem;
+}
+.topMovies .movie {
   position: relative;
 }
 .topMovies a {
@@ -130,42 +133,42 @@ main {
   padding: 0 0.5rem;
   /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
   font-size: 1.2rem;
-  position: absolute;
   bottom: 0.4rem;
+  position: absolute;
 }
 /* secdtion 2 geteilt 6  */
 .movie {
-  width: calc(95% / 6);
+  width: calc(90% / 6);
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
 }
 .movie1 {
   background-image: url(./assets/hausdesgeldes.jpg);
   object-fit: cover;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .movie2 {
   background-image: url(./assets/movie2.jpg);
   object-fit: cover;
-  background-size: 100%;
+  background-size: cover;
 }
 .movie3 {
   background-image: url(./assets/movie3.jpg);
   object-fit: cover;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .movie4 {
   background-image: url(./assets/movie4.jpg);
   object-fit: cover;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .movie5 {
   background-image: url(./assets/movie5.jpg);
   object-fit: contain;
-  background-size: 100%;
+  background-size: cover;
 }
 .movie6 {
   background-image: url(./assets/movie6.jpg);
@@ -185,4 +188,40 @@ button {
   font-weight: 900;
   border: none;
   /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
+}
+
+@media (max-width: 60em) {
+  .topMovie {
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+  }
+  .kidsMov {
+    width: calc(90% / 2);
+  }
+  .movie {
+    width: calc(90% / 3);
+  }
+}
+@media (max-width: 40em) {
+  .secondNav {
+    justify-content: center;
+  }
+  .topMovie {
+    background-size: contain;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.604);
+    background-blend-mode: multiply;
+  }
+  .topMovie .topMovieContent {
+    left: 0;
+  }
+
+  .kidsMov {
+    width: 90%;
+  }
+  .movie {
+    width: 90%;
+  }
 }
