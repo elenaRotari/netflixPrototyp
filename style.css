@@ -41,6 +41,7 @@ a {
 main {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .topMovie {
   min-height: 60vh;
