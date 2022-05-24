@@ -216,6 +216,7 @@ button {
   }
   .topMovie .topMovieContent {
     left: 0;
+    bottom: 15%;
   }
 
   .kidsMov {
