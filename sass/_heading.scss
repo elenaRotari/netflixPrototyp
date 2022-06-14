@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Arizonia&family=Bangers&family=Berkshire+Swash&family=Concert+One&family=Dancing+Script:wght@700&family=Fleur+De+Leah&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Mea+Culpa&family=Orelega+One&family=Oswald:wght@500;700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,700;0,900;1,100;1,300&family=Smokum&family=Special+Elite&family=Stint+Ultra+Condensed&family=Water+Brush&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: calc(1rem + 1vw);
+  padding-right: 2rem;
+}
+.firstNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(79, 77, 77);
+  padding: 1rem;
+}
+
+.secondNav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(48, 47, 47);
+  padding: 1rem;
+}

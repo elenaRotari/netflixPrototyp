@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  top: 15%;
+}
+.topMovie {
+  min-height: 60vh;
+  background-image: url(../assets/topMovie.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topMovie .topMovieContent {
+  color: whitesmoke;
+  position: absolute;
+  left: 55%;
+  font-size: calc(0.7rem + 1vw);
+  padding: 1rem;
+}
+.topMovie .topMovieContent p {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.topMovie .topMovieContent a {
+  background-color: rgb(79, 77, 77);
+  color: whitesmoke;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
+}

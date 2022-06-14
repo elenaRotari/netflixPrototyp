@@ -1,0 +1,36 @@
+@media (max-width: 60em) {
+    .topMovie {
+        background-size: cover;
+        background-color: gray;
+        background-blend-mode: multiply;
+    }
+    .kidsMov {
+        width: calc(90% / 2);
+    }
+    .movie {
+        width: calc(90% / 3);
+    }
+}
+@media (max-width: 40em) {
+    .secondNav {
+        justify-content: center;
+    }
+    .topMovie {
+        background-size: contain;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: rgba(0, 0, 0, 0.604);
+        background-blend-mode: multiply;
+    }
+    .topMovie .topMovieContent {
+        left: 0;
+        bottom: 15%;
+    }
+
+    .kidsMov {
+        width: 90%;
+    }
+    .movie {
+        width: 90%;
+    }
+}

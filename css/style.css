@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Arizonia&family=Bangers&family=Berkshire+Swash&family=Concert+One&family=Dancing+Script:wght@700&family=Fleur+De+Leah&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Mea+Culpa&family=Orelega+One&family=Oswald:wght@500;700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,700;0,900;1,100;1,300&family=Smokum&family=Special+Elite&family=Stint+Ultra+Condensed&family=Water+Brush&display=swap");
+button {
+  background-color: rgb(35, 34, 34);
+  font-size: 2rem;
+  color: whitesmoke;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 900;
+  border: none;
+  /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -15,6 +27,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 li {
   text-decoration: none;
   list-style-type: none;
@@ -27,6 +40,7 @@ a {
   font-size: calc(1rem + 1vw);
   padding-right: 2rem;
 }
+
 .firstNav {
   display: flex;
   justify-content: space-between;
@@ -43,80 +57,51 @@ a {
   padding: 1rem;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  position: relative;
-  top: 15%;
-  flex-grow: ;
-}
-.topMovie {
-  min-height: 60vh;
-  background-image: url(./assets/topMovie.jpg);
-  object-fit: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.topMovie .topMovieContent {
-  color: whitesmoke;
-  position: absolute;
-  left: 55%;
-  font-size: calc(0.7rem + 1vw);
-  padding: 1rem;
-}
-.topMovie .topMovieContent p {
-  font-size: 3rem;
-  padding: 1rem 0;
-}
-.topMovie .topMovieContent a {
-  background-color: rgb(79, 77, 77);
-  color: whitesmoke;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  padding: 0 0.5rem;
-  /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
-}
 .childMovie {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
 }
+
 .kidsMov {
-  width: calc(90% / 3);
+  width: 30%;
   background-color: aliceblue;
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
   position: relative;
 }
+
 .childMovies1 {
-  background-image: url(./assets/kid1.jpg);
+  background-image: url(../assets/kid1.jpg);
   background-size: cover;
 }
+
 .childMovies2 {
-  background-image: url(./assets/kid2.jpg);
+  background-image: url(../assets/kid2.jpg);
   background-size: cover;
 }
+
 .childMovies3 {
-  background-image: url(./assets/kid3.jpg);
+  background-image: url(../assets/kid3.jpg);
   background-size: cover;
 }
+
 .childMovies4 {
-  background-image: url(./assets/kid4.jpg);
+  background-image: url(../assets/kid4.jpg);
   background-size: cover;
 }
+
 .childMovies5 {
-  background-image: url(./assets/kid5.jpg);
+  background-image: url(../assets/kid5.jpg);
   background-size: cover;
 }
+
 .childMovies6 {
-  background-image: url(./assets/kid6.jpg);
+  background-image: url(../assets/kid6.jpg);
   background-size: cover;
 }
+
 .kidsMov i {
   font-weight: 700;
   font-size: calc(1rem + 5vw);
@@ -124,82 +109,6 @@ main {
   position: absolute;
   bottom: 0;
   right: 5px;
-}
-.topMovies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: space-evenly;
-}
-.topMovies .movie {
-  position: relative;
-}
-.topMovies a {
-  color: whitesmoke;
-  background-color: rgb(35, 34, 34);
-  border-radius: 5px;
-  padding: 0 0.5rem;
-  /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
-  font-size: 1.2rem;
-  bottom: 0.4rem;
-  position: absolute;
-}
-/* secdtion 2 geteilt 6  */
-.movie {
-  width: calc(90% / 6);
-  aspect-ratio: 16/9;
-  border-radius: 0.5rem;
-}
-.movie1 {
-  background-image: url(./assets/hausdesgeldes.jpg);
-  object-fit: cover;
-  background-size: cover;
-}
-
-.movie2 {
-  background-image: url(./assets/movie2.jpg);
-  object-fit: cover;
-  background-size: cover;
-}
-.movie3 {
-  background-image: url(./assets/movie3.jpg);
-  object-fit: cover;
-  background-size: cover;
-}
-
-.movie4 {
-  background-image: url(./assets/movie4.jpg);
-  object-fit: cover;
-  background-size: cover;
-}
-
-.movie5 {
-  background-image: url(./assets/movie5.jpg);
-  object-fit: contain;
-  background-size: cover;
-}
-.movie6 {
-  background-image: url(./assets/movie6.jpg);
-  object-fit: cover;
-  background-position: center;
-}
-.next {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: -12%;
-}
-button {
-  background-color: rgb(35, 34, 34);
-  font-size: 2rem;
-  color: whitesmoke;
-  border-radius: 2rem;
-  padding: 0.5rem 1.5rem;
-  font-weight: 900;
-  border: none;
-
-  /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
 }
 
 @media (max-width: 60em) {
@@ -209,10 +118,10 @@ button {
     background-blend-mode: multiply;
   }
   .kidsMov {
-    width: calc(90% / 2);
+    width: 45%;
   }
   .movie {
-    width: calc(90% / 3);
+    width: 30%;
   }
 }
 @media (max-width: 40em) {
@@ -230,7 +139,6 @@ button {
     left: 0;
     bottom: 15%;
   }
-
   .kidsMov {
     width: 90%;
   }
@@ -238,3 +146,118 @@ button {
     width: 90%;
   }
 }
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  top: 15%;
+}
+
+.topMovie {
+  min-height: 60vh;
+  background-image: url(../assets/topMovie.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topMovie .topMovieContent {
+  color: whitesmoke;
+  position: absolute;
+  left: 55%;
+  font-size: calc(0.7rem + 1vw);
+  padding: 1rem;
+}
+
+.topMovie .topMovieContent p {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.topMovie .topMovieContent a {
+  background-color: rgb(79, 77, 77);
+  color: whitesmoke;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
+}
+
+.topMovies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+.topMovies .movie {
+  position: relative;
+}
+
+.topMovies a {
+  color: whitesmoke;
+  background-color: rgb(35, 34, 34);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  /* box-shadow: 2px 2px 10px white, inset 2px 2px 10px white; */
+  font-size: 1.2rem;
+  bottom: 0.4rem;
+  position: absolute;
+}
+
+/* secdtion 2 geteilt 6  */
+.movie {
+  width: 15%;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+}
+
+.movie1 {
+  background-image: url(../assets/hausdesgeldes.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+
+.movie2 {
+  background-image: url(../assets/movie2.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+
+.movie3 {
+  background-image: url(../assets/movie3.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+
+.movie4 {
+  background-image: url(../assets/movie4.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+
+.movie5 {
+  background-image: url(../assets/movie5.jpg);
+  object-fit: contain;
+  background-size: cover;
+}
+
+.movie6 {
+  background-image: url(../assets/movie6.jpg);
+  object-fit: cover;
+  background-position: center;
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: -12%;
+}
+
+/*# sourceMappingURL=style.css.map */

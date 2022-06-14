@@ -1,0 +1,45 @@
+.childMovie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.kidsMov {
+  width: calc(90% / 3);
+  background-color: aliceblue;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.childMovies1 {
+  background-image: url(../assets/kid1.jpg);
+  background-size: cover;
+}
+.childMovies2 {
+  background-image: url(../assets/kid2.jpg);
+  background-size: cover;
+}
+.childMovies3 {
+  background-image: url(../assets/kid3.jpg);
+  background-size: cover;
+}
+.childMovies4 {
+  background-image: url(../assets/kid4.jpg);
+  background-size: cover;
+}
+.childMovies5 {
+  background-image: url(../assets/kid5.jpg);
+  background-size: cover;
+}
+.childMovies6 {
+  background-image: url(../assets/kid6.jpg);
+  background-size: cover;
+}
+.kidsMov i {
+  font-weight: 700;
+  font-size: calc(1rem + 5vw);
+  color: rgba(231, 14, 14, 0.7);
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}

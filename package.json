@@ -1,0 +1,20 @@
+{
+  "name": "netflixprototyp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass -w ./sass:./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elenaRotari/netflixPrototyp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elenaRotari/netflixPrototyp/issues"
+  },
+  "homepage": "https://github.com/elenaRotari/netflixPrototyp#readme"
+}
